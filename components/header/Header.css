@@ -1,0 +1,164 @@
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    z-index: 100;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+#event {
+    width: 100%;
+    overflow: hidden;
+    border: none !important;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.dropdown-item a p {
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    margin-top: 10px;
+}
+
+.wrap-sub-items {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3;
+}
+
+
+.sub-items {
+    background-color: #f5f6fa;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sub-items li {
+    display: block;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.navbar .navbar-toggler{
+    top: 13px !important;
+    width: max-content;
+
+}
+
+.wrap-logo {
+    width: 15%;
+}
+
+#wrapItems {
+    border: none !important;
+    min-width: 300px;
+    padding: 0;
+}
+
+.bg-none {
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    background-color: transparent !important;
+}
+
+.one-item {
+    background-color: #f5f6fa;
+    border-radius: 20px;
+}
+
+.one-item:hover {
+    background-color: #b2bec3;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar .navbar-toggler{
+        top: 15px !important;
+    }
+
+    .wrap-logo {
+        width: 25%;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #split {
+        display: none;
+    }
+
+    #subMenu ul {
+        overflow-y: auto;
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+    #info {
+        display: none;
+    }
+
+    .wrap-logo {
+        width: 30%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar .navbar-toggler{
+        top: 10px !important;
+    }
+
+    .wrap-logo {
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar .navbar-toggler{
+        top: 9px !important;
+    }
+
+    .wrap-logo {
+        width: 35%;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .navbar .navbar-toggler{
+        top: 10px !important;
+        width: 40px !important;
+    }
+
+    .wrap-logo {
+        width: 50%;
+    }
+}

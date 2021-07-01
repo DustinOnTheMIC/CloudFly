@@ -1,0 +1,37 @@
+.animate-scale {
+    animation: animate 2s infinite alternate;
+}
+
+.animate-up-down {
+    animation: animate-up-down 3s infinite alternate-reverse;
+}
+
+.animate-diagonal {
+    animation: animate-diagonal 2s infinite alternate-reverse;
+}
+@keyframes animate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes animate-up-down {
+    from {
+        transform: translateX(0px)
+    }
+    to {
+        transform: translateY(-100px)
+    }
+}
+
+@keyframes animate-diagonal {
+    from {
+        transform: translateX(-20px)
+    }
+    to {
+        transform: translateY(40px)
+    }
+}
