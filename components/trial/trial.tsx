@@ -5,7 +5,7 @@ import content from '../../share/Content';
 import message from '../../assets/images/message.png';
 import message1 from '../../assets/images/message3.png';
 import sendMail from '../../assets/images/mail.png';
-import Support from '../support/support';
+import Support from '../support/Support';
 
 interface TrialProps {
 }
