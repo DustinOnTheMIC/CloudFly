@@ -28,7 +28,7 @@ const Services: React.FC = () => {
                     <div className="row">
                         {products.items.map( (item, index) => 
                             <Products
-                                delay={ index * 100}
+                                delay={index * 100}
                                 key={ index }
                                 title={ item.title }
                                 img={ item.img }

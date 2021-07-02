@@ -37,7 +37,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
             <div className="col-lg-1 no-margin-bottom"></div>
             
             <div className="justify-content-center container" >
-                <div className="col-12 col-sm-9 col-lg-12">
+                <div className="col-12 col-sm-9 col-lg-12 animate-scale">
                     <Image src={benefit.block1.img}  sizes={sizeImg} alt="" data-aos="fade-left"/>
                 </div>
             </div>
@@ -47,8 +47,8 @@ const Benefit: React.FC<BenefitProps> = (props) => {
         <div className="container flexh-align-center">
             
             <div className="justify-content-center container">
-                <div className="col-12 col-sm-9 col-lg-12 order-first" >
-                    <Image src={benefit.block2.img} sizes={sizeImg} alt="" data-aos="fade-right" />
+                <div className="col-12 col-sm-9 col-lg-12 order-first animate-up-down" data-aos="fade-right" >
+                    <Image src={benefit.block2.img} sizes={sizeImg} alt="" className="animate-scale"/>
                 </div>
             </div>
 
@@ -95,7 +95,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
             <div className="col-lg-1 no-margin-bottom"></div>
 
             <div className="justify-content-center container">
-                <div className="col-12 col-sm-9 col-lg-12 md-12">
+                <div className="col-12 col-sm-9 col-lg-12 md-12 animate-diagonal">
                     <Image src={benefit.block3.img} sizes={sizeImg} alt="" data-aos="fade-left"/>
                 </div>
             </div>
