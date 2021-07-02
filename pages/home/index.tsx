@@ -64,7 +64,7 @@ export default function Home() {
             </div>
 
             {
-              products.items.map( (item, index: number) => 
+              products.items.map( (item, index) => 
                 <Products
                   key={item.title}
                   title={item.title}
