@@ -64,13 +64,13 @@ export default function Home() {
             </div>
 
             {
-              products.items.map( (item, index) => 
+              products.items.map( (item, index: number) => 
                 <Products
-                  delay={index * 100}
                   key={item.title}
                   title={item.title}
                   img={item.img}
                   content={item.content}
+                  delay={index * 100}
                 />
               )
             }
