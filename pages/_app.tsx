@@ -12,8 +12,20 @@ import '../components/benefit/Benefit.css';
 
 import Layout from '../components/Layout';
 import type { AppProps } from 'next/app';
+import { useEffect } from "react";
+import Aos from 'aos';
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: false,
+      offset: 50,
+      delay: 300
+    });
+  }, []);
+
   return (
     <Layout>
       <Component {...pageProps} />

@@ -34,11 +34,6 @@ const Trial: React.FC<TrialProps> = (props) => {
         <div className="block-decoration-1 opacity-20 animate-spin">
             <Image src={trial.img} alt=""/>
         </div>
-
-        <div className="bg-dark p-5"></div>
-
-        <Support/>
-
     </section>
   );
 };

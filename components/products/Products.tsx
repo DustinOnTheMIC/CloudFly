@@ -4,13 +4,14 @@ import Image from 'next/image';
 export type ProductItemProps = {
     title: string
     img: any,
-    content: string
+    content: string,
+    delay: number
 }
 
-const ServiceItem: React.FC<ProductItemProps> = ({ title, img, content }) => {
+const ServiceItem: React.FC<ProductItemProps> = ({ title, img, content, delay }) => {
 
   return (
-    <div className="col-md-4 col-sm-6 col-xs-10">
+    <div className="col-md-4 col-sm-6 col-xs-10" data-aos="flip-up" data-aos-delay={`${delay}`}>
           <a>
             <div className="service-item shadow box-product">
               <Image src={ img } alt="" className="img-fluid" width={75} height={75}/>

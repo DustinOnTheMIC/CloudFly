@@ -656,7 +656,6 @@ figcaption {
 
 .section.is-header.bg-accent.position-relative.bg-img {
   background-color: #005dff;
-  background-image: url('../images/2126.jpg');
   background-position: 100% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -729,7 +728,6 @@ figcaption {
 }
 
 .section.is-hero.img1.on-dark.article-banner {
-  background-image: url('../images/2550671.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -752,7 +750,6 @@ figcaption {
 
 .section.is-hero.img1.article-banner {
   min-height: 400px;
-  background-image: url('../images/2550671.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -816,8 +813,7 @@ figcaption {
 }
 
 .section.bg-section {
-  background-image: url('../images/1026.png'), -webkit-gradient(linear, left top, left bottom, from(#0069FF), to(#0069FF));
-  background-image: url('../images/1026.png'), linear-gradient(180deg, #0069FF, #0069FF);
+
   background-position: 0vw 50%, 0px 0px;
   background-size: 980px, auto;
   background-repeat: no-repeat, repeat;
@@ -2786,109 +2782,6 @@ figcaption {
   align-items: flex-end;
 }
 
-.c-carousel2__content.dummy1 {
-  background-image: url('../images/300x400_1.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__content.dummy2 {
-  background-image: url('../images/300x400-1.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__content.dummy3 {
-  background-image: url('../images/300x400-2.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__content.dummy4 {
-  background-image: url('../images/300x400-3.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__content.dummy5 {
-  background-image: url('../images/300x400-4.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__content.dummy6 {
-  background-image: url('../images/300x400-5.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__content.dummy7 {
-  background-image: url('../images/300x400-6.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__content.dummy8 {
-  background-image: url('../images/300x400-8.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__content.dummy9 {
-  background-image: url('../images/300x400-9.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.c-carousel2__nav {
-  display: none;
-}
-
-.c-carousel3__content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 24px;
-  padding-left: 24px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c-carousel3__wrapper {
-  overflow: visible;
-  max-width: 1000px;
-}
-
-.c-carousel3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  height: auto;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: hsla(0, 0%, 86.7%, 0);
-}
 
 .c-carousel3__left-arrow {
   color: #000;
@@ -3649,20 +3542,17 @@ figcaption {
 .blockquote-wrapper {
   padding: 128px 100px;
   background-color: #005dff;
-  background-image: url('../images/boxesbg.svg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .blockquote-wrapper.bg-blockquote {
-  background-image: url('../images/header-sub.svg');
   background-position: 91% 37%;
   background-size: 5000px;
 }
 
 .blockquote-wrapper.bg-blockquote.position-relative {
-  background-image: url('../images/geometric10x-min.png');
   background-position: 50% 60%;
   background-size: 1370px;
 }
@@ -3769,26 +3659,6 @@ figcaption {
   background-attachment: scroll;
 }
 
-.decoration-rightside.bg2 {
-  bottom: -170px;
-  background-image: url('../images/startup-chat.jpg');
-  background-position: 330px 50%;
-}
-
-.decoration-rightside.img-hero2 {
-  bottom: -45px;
-  height: 650px;
-  background-image: url('../images/man-pointing-min.png');
-  background-position: -220px 50%;
-}
-
-.decoration-rightside.is-hero {
-  height: 700px;
-  background-image: url('../images/hero.svg');
-  background-position: -236px 60%;
-  background-size: 860px;
-}
-
 .decoration-rightside.is-hero-decoration {
   display: none;
   height: 700px;
@@ -3802,7 +3672,6 @@ figcaption {
   width: 50vw;
   height: 1000px;
   margin-right: 700px;
-  background-image: url('../images/blob-3.svg');
   background-position: 100% 50%;
   background-size: 1000px;
   background-repeat: no-repeat;
@@ -3814,13 +3683,11 @@ figcaption {
   top: 0px;
   right: auto;
   height: 100%;
-  background-image: url('../images/3795.jpg');
   background-position: 100% 50%;
   background-size: cover;
 }
 
 .decoration-leftside.hidden-md.img2 {
-  background-image: url('../images/3912.jpg');
   background-size: 1000px;
 }
 
@@ -3862,7 +3729,6 @@ figcaption {
 }
 
 .card.img1 {
-  background-image: url('../images/creative-man.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3983,42 +3849,9 @@ figcaption {
   right: 0%;
   bottom: 0%;
   z-index: 0;
-  background-image: url('../images/yellow-copy-space-with-backpack-full-school-supplies_23-2148224289.jpg');
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: 0 20px 65px 0 rgba(0, 0, 0, 0.25);
-}
-
-.c-gridpost__image-bg.img2 {
-  background-image: url('../images/composition-pink-school-supplies-headphones_23-2148182062.jpg');
-}
-
-.c-gridpost__image-bg.img3 {
-  background-image: url('../images/blue-school-backpack-with-essential-supplies_23-2148207678.jpg');
-}
-
-.c-gridpost__image-bg.img4 {
-  background-image: url('../images/gratisography-346H.jpg');
-}
-
-.c-gridpost__image-bg.img5 {
-  background-image: url('../images/gratisography-358H.jpg');
-}
-
-.c-gridpost__image-bg.img6 {
-  background-image: url('../images/gratisography-278H.jpg');
-}
-
-.c-gridpost__image-bg.img7 {
-  background-image: url('../images/gratisography-300H.jpg');
-}
-
-.c-gridpost__image-bg.img8 {
-  background-image: url('../images/gratisography-tape-face.jpg');
-}
-
-.c-gridpost__image-bg.img9 {
-  background-image: url('../images/phone.jpeg');
 }
 
 .iconfont {
@@ -4576,7 +4409,6 @@ figcaption {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  background-image: url('../images/photo-1551739440-5dd934d3a94a.jpeg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4908,23 +4740,6 @@ figcaption {
 
 .rich-text-block {
   font-style: normal;
-}
-
-.c-imageblock-link {
-  width: 100%;
-  padding: 128px 96px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/70447.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/70447.jpg');
-  background-position: 0px 0px, 50% 22%;
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
-}
-
-.c-imageblock-link.img2 {
-  background-image: url('../images/with-phone.jpg');
-  background-position: 50% 40%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .c-imageblock-link__text {
@@ -6212,13 +6027,6 @@ figcaption {
     padding-bottom: 96px;
   }
 
-  .c-imageblock-link.img2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.78)), to(hsla(0, 0%, 100%, 0.78))), url('../images/with-phone.jpg');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.78), hsla(0, 0%, 100%, 0.78)), url('../images/with-phone.jpg');
-    background-position: 0px 0px, 50% 40%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
-  }
 
   .navigation-menu {
     -webkit-box-orient: vertical;

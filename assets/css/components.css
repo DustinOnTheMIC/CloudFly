@@ -2391,3 +2391,7 @@ ul.grid-2 > li {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.bg-dark {
+  background-color: #F7F7F7 !important;
+}

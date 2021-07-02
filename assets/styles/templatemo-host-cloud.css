@@ -528,7 +528,6 @@ header {
 	margin-top: 140px;
 }
 .background-image-pricing {
-	background-image: url(../images/pricing-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 500px;

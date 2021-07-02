@@ -14,6 +14,7 @@ import Trial from "../../components/trial/Trial";
 
 import content from '../../share/Content';
 import Partner from "../../components/partner/partner";
+import Support from "../../components/support/Support";
 
 export default function Home() {
   const { products } = content.homePage;
@@ -54,7 +55,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-heading">
+              <div className="section-heading"  data-aos="fade-up">
 
                 <span>_____________</span>
                 <h2>{products.title}</h2>
@@ -63,8 +64,9 @@ export default function Home() {
             </div>
 
             {
-              products.items.map( item => 
+              products.items.map( (item, index) => 
                 <Products
+                  delay={index * 100}
                   key={item.title}
                   title={item.title}
                   img={item.img}
@@ -79,7 +81,7 @@ export default function Home() {
 
       <Benefit/>
         
-      <div className="justify-content-center testimonial-item pt-5 ">
+      <div className="justify-content-center testimonial-item pt-5" data-aos="zoom-in-up">
         <div className="section-heading">
           <span>_____________</span>
           <h2 className="text-center">{content.internal.testimonials.title}</h2>
@@ -98,6 +100,8 @@ export default function Home() {
       {/* trial */}
         <Trial/>
       {/* trial */}
+
+      <Support/>
 
     </>
   );
