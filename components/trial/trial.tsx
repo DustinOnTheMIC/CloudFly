@@ -1,10 +1,6 @@
 import * as React from 'react';
 import Image from 'next/image';
-import network from '../../assets/images/network.svg';
 import content from '../../share/Content';
-import message from '../../assets/images/message.png';
-import message1 from '../../assets/images/message3.png';
-import sendMail from '../../assets/images/mail.png';
 import Support from '../support/Support';
 
 interface TrialProps {
@@ -35,7 +31,7 @@ const Trial: React.FC<TrialProps> = (props) => {
                 ></input>
             </form>
         </div>
-        <div className="block-decoration-1 opacity-20">
+        <div className="block-decoration-1 opacity-20 animate-spin">
             <Image src={trial.img} alt=""/>
         </div>
 

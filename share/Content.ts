@@ -15,10 +15,78 @@ import message from '../assets/images/message.png';
 import message3 from '../assets/images/message3.png';
 import sendMail from '../assets/images/mail.png';
 
+import partner1 from '../assets/images/partner1.png';
+import partner2 from '../assets/images/partner2.png';
+import partner3 from '../assets/images/partner3.png';
+import partner4 from '../assets/images/partner4.png';
+
 const content = {
     internal: {
         ads: `This line is for the event that you want to add to the web side`,
         logo: logo,
+        carouselIntroduce: {
+            items: [
+                {
+                    img: slide1,
+                    description:"The description for slide 1",
+                    subLine: "...",
+                    active: true,
+                    slide: 0
+                },
+                {
+                    img: slide1,
+                    description:"The description for slide 2",
+                    subLine: "...",
+                    slide: 1
+                },
+                {
+                    img: slide1,
+                    description:"The description for slide 3",
+                    subLine: "...",
+                    slide: 2
+                }
+            ]
+        },
+        testimonials: {
+            title: "Khách hàng nói gì về chúng tôi",
+            items: [
+                {
+                    active: true,
+                    content: `Ut elementum a elit sed tristique. Pellentesque sed semper
+                        erat. Orci varius natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut
+                        malesuada.`,
+                    from: "William Smith",
+                    position: "New Co-Founder",
+                    slide: 0
+                },
+                {
+                    content: `Quisque lacinia sed velit et maximus. Quisque dictum, lacus a
+                    malesuada finibus, arcu magna luctus risus, eu accumsan risus
+                    elit vitae lacus.`,
+                    from: "Vinny Smart",
+                    position: "Digital Marketer",
+                    slide: 1
+                },
+                {
+                    content: `Vestibulum mauris ipsum, tempor tincidunt justo sit amet,
+                    bibendum tincidunt dui. Aenean molestie, odio quis viverra
+                    ultricies, leo tellus lacinia neque, sit amet maximus tortor
+                    nunc aliquet felis.`,
+                    from: "Trevor Liam",
+                    position: "Technology Chef",
+                    slide: 2
+                }
+            ]
+        },
+        partner: {
+            title: "Đối tác cùng phát triển của ClounFly",
+            content: `While we are at the forefront of and specialize
+                in design-build, we are very familiar with a number of
+                delivery methods and are confident we can find the 
+                process that will best help you meet your goals.`,
+            img: [partner1, partner2, partner3, partner4]
+        },
         trial: {
             title: "Trải nghiệm dịch vụ ngay hôm nay",
             content: `Dùng thử dịch vụ miễn phí trong 3 ngày để thử nghiệm nền tảng cho
@@ -130,61 +198,8 @@ const content = {
             ]
 
         },
-        testimonials: {
-            title: "Khách hàng nói gì về chúng tôi",
-            items: [
-                {
-                    active: true,
-                    content: `Ut elementum a elit sed tristique. Pellentesque sed semper
-                        erat. Orci varius natoque penatibus et magnis dis parturient
-                        montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut
-                        malesuada.`,
-                    from: "William Smith",
-                    position: "New Co-Founder",
-                    slide: 0
-                },
-                {
-                    content: `Quisque lacinia sed velit et maximus. Quisque dictum, lacus a
-                    malesuada finibus, arcu magna luctus risus, eu accumsan risus
-                    elit vitae lacus.`,
-                    from: "Vinny Smart",
-                    position: "Digital Marketer",
-                    slide: 1
-                },
-                {
-                    content: `Vestibulum mauris ipsum, tempor tincidunt justo sit amet,
-                    bibendum tincidunt dui. Aenean molestie, odio quis viverra
-                    ultricies, leo tellus lacinia neque, sit amet maximus tortor
-                    nunc aliquet felis.`,
-                    from: "Trevor Liam",
-                    position: "Technology Chef",
-                    slide: 2
-                }
-            ]
-        },
-        carouselIntroduce: {
-            items: [
-                {
-                    img: slide1,
-                    description:"The description for slide 1",
-                    subLine: "...",
-                    active: true,
-                    slide: 0
-                },
-                {
-                    img: slide1,
-                    description:"The description for slide 2",
-                    subLine: "...",
-                    slide: 1
-                },
-                {
-                    img: slide1,
-                    description:"The description for slide 3",
-                    subLine: "...",
-                    slide: 2
-                }
-            ]
-        }
+        
+        
     },
     
     homePage: {

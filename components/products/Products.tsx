@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useEffect } from 'react';
 import Image from 'next/image';
 
 export type ProductItemProps = {

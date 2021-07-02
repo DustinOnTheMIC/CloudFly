@@ -47,6 +47,10 @@
     transition: all 0.3;
 }
 
+.navbar .navbar-toggler {
+    background-color: transparent !important;
+    border: none;
+}
 
 .sub-items {
     background-color: #f5f6fa;

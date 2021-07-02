@@ -23,7 +23,7 @@ const Support = (props: SupportProps) => {
                         className="col-md-4 col-12 row justify-content-center"
                         key={index}
                     >
-                        <div className="col-6">
+                        <div className="col-6 animate-scale-hover">
                             <Image src={item.img} alt="" width="400" height="400"/>
                         </div>
                         <div className="col-8">

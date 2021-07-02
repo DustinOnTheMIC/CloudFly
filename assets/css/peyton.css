@@ -5059,12 +5059,11 @@ figcaption {
 
 .block-decoration-1 {
   position: absolute;
-  left: auto;
-  top: 12%;
-  right: 20%;
+  left: 40%;
+  top: 0;
   bottom: auto;
-  width: 40%;
-  /* opacity: 0.77 !important; */
+  width: 70%;
+  opacity: 0.1 !important;
   z-index: 0;
 }
 

@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 
 import publicCloud from "../../assets/media/public-cloud_7RpRHZ1.png";

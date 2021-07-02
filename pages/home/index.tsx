@@ -10,9 +10,10 @@ import Products from "../../components/products/Products";
 import CarouselAbout from '../../components/carouselTestimonials/Testimonials';
 import CarouselDefault from "../../components/carouselDefault/CarouselDefault";
 import Benefit from "../../components/benefit/Benefit";
-import Trial from "../../components/trial/trial";
+import Trial from "../../components/trial/Trial";
 
 import content from '../../share/Content';
+import Partner from "../../components/partner/partner";
 
 export default function Home() {
   const { products } = content.homePage;
@@ -90,8 +91,12 @@ export default function Home() {
         <CarouselAbout />
       {/* carousel */}
 
+            {/* partner */}
+              <Partner/>
+            {/* partner */}
+
       {/* trial */}
-            <Trial/>
+        <Trial/>
       {/* trial */}
 
     </>
