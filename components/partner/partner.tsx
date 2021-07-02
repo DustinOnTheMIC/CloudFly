@@ -14,7 +14,7 @@ const Partner: React.FC<PartnerProps> = (props) => {
   const { partner } = content.internal;
 
   return (
-      <section className="container p-5 my-5 d-flex flex-wrap">
+      <section className="container p-5 my-5 d-flex flex-wrap justify-content-center">
         <div className="col-12 col-lg-6 justify-content-end row">
           <h1 className="text-center text-lg-right col-12 col-md-11">{partner.title}</h1>
           <p className="text-center text-lg-right col-12 col-md-11 mt-5">{partner.content}</p>
