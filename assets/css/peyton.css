@@ -125,6 +125,11 @@
   grid-column-gap: 16px;
 }
 
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Arial";
   color: #556575;

@@ -25,7 +25,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       once: false,
       offset: 50,
       delay: 300,
-      disable: "mobile"
     });
   }, []);
 
