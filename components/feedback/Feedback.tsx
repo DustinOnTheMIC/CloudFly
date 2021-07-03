@@ -13,7 +13,7 @@ const Testimonials: React.FC = () => {
     {
       img: user,
       user: {
-        name: "abc",
+        name: "name",
         gender: true,
         info: "nothing"
       },
@@ -25,8 +25,8 @@ const Testimonials: React.FC = () => {
     {
       img: user,
       user: {
-        name: "abc",
-        gender: true,
+        name: "name",
+        gender: false,
         info: "nothing"
       },
       comment: `Lorem ipsum, dolor sit amet 

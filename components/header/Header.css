@@ -76,6 +76,10 @@
     width: 15%;
 }
 
+.contact-info {
+    margin-left: 20px;
+}
+
 #wrapItems {
     border: none !important;
     min-width: 300px;

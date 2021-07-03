@@ -2,6 +2,10 @@
     margin-top: 6%;
 }
 
+.content-introduce {
+    top: 50%;
+}
+
 @media screen and (max-width: 1280px) {
     #carouselDefault {
         margin-top: 8%;

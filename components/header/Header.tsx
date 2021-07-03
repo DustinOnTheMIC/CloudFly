@@ -192,6 +192,12 @@ export default function Header() {
           </ul>
 
           <form className="form-inline my-2 my-lg-0 d-flex justify-content-end">
+
+            <div className="wrap-icon contact-info">
+              <i className="fa fa-phone-square mr-xl-3 mr-2" aria-hidden="true"></i>
+              0904 558 448
+            </div>
+
             <button className="btn btn-outline-primary my-2 mx-2 my-sm-0" type="submit">Đăng Nhập</button>
             <button className="btn btn-outline-info my-2 mx-2 my-sm-0" type="submit">Dùng Thử</button>
           </form>

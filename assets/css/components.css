@@ -2395,3 +2395,11 @@ ul.grid-2 > li {
 .bg-dark {
   background-color: #F7F7F7 !important;
 }
+
+.opacity-8 {
+  opacity: .8;
+}
+
+.bg-dark-opacity-5 {
+  background-color: rgba(247, 247, 247, .5);
+}

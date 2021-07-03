@@ -23,7 +23,7 @@
 
     @keyframes scroll {
         0% {
-            transform: translate(100%, 0);
+            transform: translate(120%, 0);
         }
         100% {
             transform: translate(-300%, 0);

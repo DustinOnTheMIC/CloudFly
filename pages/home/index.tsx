@@ -7,7 +7,6 @@ import  trusted1  from "../../assets/images/trusted-01.png";
 
 //Components / type
 import Products from "../../components/products/Products";
-import CarouselAbout from '../../components/feedback/Feedback';
 import CarouselDefault from "../../components/carouselDefault/CarouselDefault";
 import Benefit from "../../components/benefit/Benefit";
 import Trial from "../../components/trial/Trial";
@@ -92,17 +91,15 @@ export default function Home() {
 
       <Feedback/>
 
+    {/* partner */}
+      <Partner/>
+    {/* partner */}
 
-      {/* partner */}
-        <Partner/>
-      {/* partner */}
+    {/* trial */}
+      <Trial/>
+    {/* trial */}
 
-      {/* trial */}
-        <Trial/>
-      {/* trial */}
-
-
-        <Support/>
+      <Support/>
 
     </div>
   );
