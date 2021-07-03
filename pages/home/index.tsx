@@ -7,19 +7,21 @@ import  trusted1  from "../../assets/images/trusted-01.png";
 
 //Components / type
 import Products from "../../components/products/Products";
-import CarouselAbout from '../../components/carouselTestimonials/Testimonials';
+import CarouselAbout from '../../components/feedback/Feedback';
 import CarouselDefault from "../../components/carouselDefault/CarouselDefault";
 import Benefit from "../../components/benefit/Benefit";
 import Trial from "../../components/trial/Trial";
 
 import content from '../../share/Content';
-import Partner from "../../components/partner/partner";
+import Partner from "../../components/partner/Partner";
 import Support from "../../components/support/Support";
+import Feedback from "../../components/feedback/Feedback";
 
 export default function Home() {
+
   const { products } = content.homePage;
   return (
-    <>
+    <div>
       <CarouselDefault/>
 
       <section className="trusted-section">
@@ -86,23 +88,22 @@ export default function Home() {
           <span>_____________</span>
           <h2 className="text-center">{content.internal.testimonials.title}</h2>
         </div>
-
       </div>
-      
-      {/* carousel */}
-        <CarouselAbout />
-      {/* carousel */}
 
-            {/* partner */}
-              <Partner/>
-            {/* partner */}
+      <Feedback/>
+
+
+      {/* partner */}
+        <Partner/>
+      {/* partner */}
 
       {/* trial */}
         <Trial/>
       {/* trial */}
 
-      <Support/>
 
-    </>
+        <Support/>
+
+    </div>
   );
 }

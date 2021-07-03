@@ -85,7 +85,7 @@ const content = {
                 in design-build, we are very familiar with a number of
                 delivery methods and are confident we can find the 
                 process that will best help you meet your goals.`,
-            img: [partner1, partner2, partner3, partner4]
+            img: [partner1, partner2, partner3, partner4, partner1, partner2, partner3, partner4, partner1, partner2, partner3, partner4]
         },
         trial: {
             title: "Trải nghiệm dịch vụ ngay hôm nay",

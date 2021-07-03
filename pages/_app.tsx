@@ -9,6 +9,8 @@ import '../assets/css/peyton.css';
 import '../assets/css/components.css';
 import '../components/carouselDefault/CarouselDefault.css';
 import '../components/benefit/Benefit.css';
+import '../components/feedback/Feedback.css';
+import '../components/partner/Partner.css';
 
 import Layout from '../components/Layout';
 import type { AppProps } from 'next/app';
@@ -22,7 +24,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       easing: "ease-out-cubic",
       once: false,
       offset: 50,
-      delay: 300
+      delay: 300,
+      disable: "mobile"
     });
   }, []);
 

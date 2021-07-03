@@ -1,0 +1,12 @@
+.img-user {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.img-radius {
+  border-radius: 50%;
+}
+
+.rating {
+  color: #f1c40f
+}

@@ -21,13 +21,15 @@ const CarouselDefault: React.FC = (props: ICarouselDefaultProps) => {
           ></li>      
         )}
       </ol>
-      <div className="carousel-inner">
+      <div className="carousel-inner ">
 
         {carouselIntroduce.items.map((item, index) => 
           <div className={`carousel-item ${item.active ? 'active' : ''}`} key={index}>
-            <div className="justify-content-center row">
-                <Image className="d-block h-100" src={item.img} alt="First slide"/>
-                <div className="carousel-caption d-none d-md-block text-light">
+            <div className="justify-content-center align-items-center row">
+                <div className="d-block h-100 img-fluid">
+                  <Image className="" src={item.img} alt="First slide"/>
+                </div>
+                <div className="carousel-caption d-none d-md-block text-light ">
                   <i className="text-light">{item.description}</i>
                   <p className="text-light">{item.subLine}</p>
                 </div>

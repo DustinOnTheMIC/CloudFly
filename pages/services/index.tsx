@@ -2,7 +2,7 @@ import * as React from "react";
 
 //component / type
 import Products, { ProductItemProps } from "../../components/products/Products";
-import CarouselAbout from "../../components/carouselTestimonials/Testimonials";
+import CarouselAbout from "../../components/feedback/Feedback";
 import content from "../../share/Content";
 const Services: React.FC = () => {
 
