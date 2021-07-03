@@ -1,13 +1,14 @@
 import * as React from 'react';
-import content from '../../share/Content';
 import Image from 'next/image';
+import useTranslate from '../../hooks/useTranslate';
 
 export interface SupportProps {
 }
 
 const Support = (props: SupportProps) => {
 
-    const { support } = content.internal;
+    const translate = useTranslate();
+    const { support } = translate.internal;
 
     return (
         <div className="bg-dark py-5">

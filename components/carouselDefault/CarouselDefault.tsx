@@ -1,18 +1,20 @@
 import * as React from "react";
 
 import Image from "next/image";
-import content from "../../share/Content";
+import useTranslate from '../../hooks/useTranslate';
 
 export interface ICarouselDefaultProps {}
 
 const CarouselDefault: React.FC = (props: ICarouselDefaultProps) => {
+  
+  const translate: any = useTranslate();
 
-  const { carouselIntroduce } = content.internal;
+  const { carouselIntroduce } = translate.internal;
 
   return (
     <div id="carouselDefault" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
-        {carouselIntroduce.items.map((item, index) => 
+        {carouselIntroduce.items.map((item: any, index: number) => 
           <li 
             key={index}
             data-target="#carouselDefault" 
@@ -23,7 +25,7 @@ const CarouselDefault: React.FC = (props: ICarouselDefaultProps) => {
       </ol>
       <div className="carousel-inner ">
 
-        {carouselIntroduce.items.map((item, index) => 
+        {carouselIntroduce.items.map((item: any, index: number) => 
           <div className={`carousel-item ${item.active ? 'active' : ''}`} key={index}>
             <div className="justify-content-center align-items-center row">
                 <div className="d-block h-100 img-fluid opacity-8">

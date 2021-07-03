@@ -1,14 +1,14 @@
 import * as React from 'react';
 import Image from 'next/image';
-import content from '../../share/Content';
-import Support from '../support/Support';
+import useTranslate from '../../hooks/useTranslate';
 
 interface TrialProps {
 }
 
 const Trial: React.FC<TrialProps> = (props) => {
-
-    const { trial } = content.internal;
+    
+    const translate = useTranslate();
+    const { trial } = translate.internal;
 
   return (
     <section className="section bg-cta position-relative overflow-hidden" id="register">

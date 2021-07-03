@@ -1,11 +1,13 @@
 import * as React from "react";
 import Image from "next/image";
 import content from "../../share/Content";
+import useTranslate from '../../hooks/useTranslate';
 
 interface PartnerProps {}
 
 const Partner: React.FC<PartnerProps> = (props) => {
-  const { partner } = content.internal;
+  const translate = useTranslate();
+  const { partner } = translate.internal;
 
   return (
     <section className="bg-dark py-5">

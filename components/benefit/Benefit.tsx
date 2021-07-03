@@ -1,13 +1,15 @@
 import * as React from 'react';
 import Image from "next/image";
-import content from '../../share/Content';
+import useTranslate from '../../hooks/useTranslate';
 
 interface BenefitProps {
 }
 
 const Benefit: React.FC<BenefitProps> = (props) => {
+    const translate: any = useTranslate();
 
-    const { benefit } = content.homePage;
+    const { benefit } = translate.homePage;
+    
     const sizeImg = '(max-width: 479px) 90vw, (max-width: 851px) 94vw, (max-width: 991px) 800px, 45vw';
 
   return (
@@ -22,7 +24,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
                 </h2>
                 <ul className="c-checklist">
 
-                    {benefit.block1.items.map((item, index) => 
+                    {benefit.block1.items.map((item: any, index: number) => 
                         <div key={index} >
                             <li className="c-checklist_item margin-bottom wrap-icon">
                                 <i className="fa fa-check check-list" aria-hidden="true"></i>
@@ -62,7 +64,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
                 <div className="container container-nested margin-bottom">
                     <ul className="c-checklist d-flex flex-wrap">
 
-                        {benefit.block2.items.map((item, index) => 
+                        {benefit.block2.items.map((item: any, index: number) => 
                             <li className="c-checklist_item col-lg-6 wrap-icon" key={index}>
                                 <i className="fa fa-check check-list"></i> 
                                 {item}
@@ -82,7 +84,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
                 </h2>
                 <ul className="c-checklist">
 
-                    {benefit.block3.items.map((item, index) => 
+                    {benefit.block3.items.map((item: any, index: number) => 
                         <li className="c-checklist_item margin-bottom wrap-icon" key={index}>
                             <i className="fa fa-check check-list" aria-hidden="true"></i>
                             <strong className="is-heading-color">{item.title}</strong><br/>

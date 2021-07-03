@@ -1,9 +1,9 @@
 import * as React from "react";
-import { useEffect } from 'react';
+import useTranslate from "../../hooks/useTranslate";
 
 //Image
 import Image from "next/image";
-import  trusted1  from "../../assets/images/trusted-01.png";
+import trusted1  from "../../assets/images/trusted-01.png";
 
 //Components / type
 import Products from "../../components/products/Products";
@@ -17,8 +17,12 @@ import Support from "../../components/support/Support";
 import Feedback from "../../components/feedback/Feedback";
 
 export default function Home() {
+  
+  const t:any = useTranslate();
 
-  const { products } = content.homePage;
+  const { products } = t.homePage;
+  const { testimonials } = t.internal;
+  
   return (
     <div>
       <CarouselDefault/>
@@ -65,7 +69,7 @@ export default function Home() {
             </div>
 
             {
-              products.items.map( (item, index: number) => 
+              products.items.map( (item: any, index: number) => 
                 <Products
                   key={item.title}
                   title={item.title}
@@ -85,7 +89,7 @@ export default function Home() {
       <div className="justify-content-center testimonial-item pt-5" data-aos="zoom-in-up">
         <div className="section-heading">
           <span>_____________</span>
-          <h2 className="text-center">{content.internal.testimonials.title}</h2>
+          <h2 className="text-center">{testimonials.title}</h2>
         </div>
       </div>
 

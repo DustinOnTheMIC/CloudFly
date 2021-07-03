@@ -1,4 +1,5 @@
 import * as React from "react";
+import useTranslate from "../../hooks/useTranslate";
 
 //component / type
 import Products, { ProductItemProps } from "../../components/products/Products";
@@ -6,7 +7,9 @@ import CarouselAbout from "../../components/feedback/Feedback";
 import content from "../../share/Content";
 const Services: React.FC = () => {
 
-  const { products } = content.homePage;
+    const translate: any = useTranslate();
+
+    const { products } = translate.homePage;
 
     return (
         <>
@@ -26,7 +29,7 @@ const Services: React.FC = () => {
             <div className="services-section services-page">
                 <div className="container">
                     <div className="row">
-                        {products.items.map( (item, index) => 
+                        {products.items.map( (item: any, index: number) => 
                             <Products
                                 delay={index * 100}
                                 key={ index }

@@ -1,9 +1,9 @@
 import * as React from "react";
 import Image from "next/image";
-import content from "../../share/Content";
 import Link from "next/link";
 import terms from "../../assets/images/terms.svg";
 import btc from '../../assets/images/bct.png';
+import useTranslate from "../../hooks/useTranslate";
 
 export type FooterProps = {};
 
@@ -14,8 +14,9 @@ type itemOptions = {
 }
 
 export default function Footer(props: FooterProps) {
-  const { logo } = content.internal;
-  const { via, options, address, copyright } = content.internal.footer;
+  const translate = useTranslate();
+  const { logo } = translate.internal;
+  const { via, options, address, copyright } = translate.internal.footer;
 
   return (
     <footer className="section padding-bottom-16 is-dark col-12">

@@ -1,13 +1,9 @@
 import * as React from "react";
 import content from "../../share/Content";
-import Carousel from "react-multi-carousel";
-import Image from "next/image";
-import slide1 from '../../assets/images/slide1.jpg';
 import user from '../../assets/images/user.png';
 import FeedBackItem, { FeedBackItemProps } from "./FeedbackItem";
 
 const Testimonials: React.FC = () => {
-  const { testimonials, carouselIntroduce } = content.internal;
 
   const feedback: FeedBackItemProps[] = [
     {
