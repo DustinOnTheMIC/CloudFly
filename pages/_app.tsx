@@ -11,6 +11,9 @@ import '../components/carouselDefault/CarouselDefault.css';
 import '../components/benefit/Benefit.css';
 import '../components/feedback/Feedback.css';
 import '../components/partner/Partner.css';
+import { createStore } from 'redux';
+import {Provider} from 'react-redux';
+import allReducer from '../redux/reducers';
 
 import Layout from '../components/Layout';
 import type { AppProps } from 'next/app';
@@ -28,10 +31,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     });
   }, []);
 
+  const store = createStore(allReducer);
+  
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Provider store={store}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
   )
 }
 export default MyApp

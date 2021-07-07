@@ -26,7 +26,7 @@ const Trial: React.FC<TrialProps> = (props) => {
                 ></input>
                 <input 
                     type="submit" 
-                    value="Đăng ký ngay" 
+                    value={trial.button} 
                     className="button-primary btn shadow-lg is-white"
                 ></input>
             </form>

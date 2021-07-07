@@ -17,7 +17,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
 
         <div className="container flexh-align-center margin-bottom-double">
 
-            <div className="col-lg-5 alignself-center md-12" data-aos="fade-right">
+            <div className="col-lg-5 alignself-center md-12">
 
                 <h2 className="margin-bottom-double" >
                     <strong>{benefit.block1.title}</strong>
@@ -40,7 +40,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
             
             <div className="justify-content-center container" >
                 <div className="col-12 col-sm-9 col-lg-12 animate-scale">
-                    <Image src={benefit.block1.img}  sizes={sizeImg} alt="" data-aos="fade-left"/>
+                    <Image src={benefit.block1.img}  sizes={sizeImg} alt=""/>
                 </div>
             </div>
             
@@ -49,16 +49,17 @@ const Benefit: React.FC<BenefitProps> = (props) => {
         <div className="container flexh-align-center">
             
             <div className="justify-content-center container">
-                <div className="col-12 col-sm-9 col-lg-12 order-first animate-up-down" data-aos="fade-right" >
+                <div className="col-12 col-sm-9 col-lg-12 order-first animate-up-down">
                     <Image src={benefit.block2.img} sizes={sizeImg} alt="" className="animate-scale"/>
                 </div>
             </div>
 
-            <div className="col-lg-5 alignself-center md-12" data-aos="fade-left">
+            <div className="col-lg-5 alignself-center md-12">
 
                 <h2>
                     <strong >{benefit.block2.title}</strong>
                 </h2>
+                
                 <div className="margin-bottom-double">{benefit.block2.description}</div>
 
                 <div className="container container-nested margin-bottom">
@@ -78,7 +79,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
 
         <div className="container flexh-align-center margin-bottom-double">
 
-            <div className="col-lg-5 alignself-center md-12" data-aos="fade-right" data-aos-delay="500">
+            <div className="col-lg-5 alignself-center md-12">
                 <h2 className="margin-bottom-double">
                     <strong>{benefit.block3.title}</strong>
                 </h2>
@@ -98,7 +99,7 @@ const Benefit: React.FC<BenefitProps> = (props) => {
 
             <div className="justify-content-center container">
                 <div className="col-12 col-sm-9 col-lg-12 md-12 animate-diagonal">
-                    <Image src={benefit.block3.img} sizes={sizeImg} alt="" data-aos="fade-left"/>
+                    <Image src={benefit.block3.img} sizes={sizeImg} alt=""/>
                 </div>
             </div>
         </div>

@@ -80,7 +80,7 @@
     margin-left: 20px;
 }
 
-#wrapItems {
+.wrap-items {
     border: none !important;
     min-width: 300px;
     padding: 0;
@@ -92,6 +92,7 @@
 
 .dropdown-menu {
     background-color: transparent !important;
+    border: none
 }
 
 .one-item {
@@ -101,6 +102,10 @@
 
 .one-item:hover {
     background-color: #b2bec3;
+}
+
+.btn-rounded {
+    border-radius:  20px !important;
 }
 
 @media only screen and (max-width: 991px) {

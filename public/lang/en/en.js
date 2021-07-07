@@ -24,6 +24,91 @@ const content = {
     internal: {
         ads: `This line is for the event that you want to add to the web side`,
         logo: logo,
+        email: "contact@cloudfly.vn",
+        phoneNumber: "0904 558 448",
+        header: {
+            menu: [
+                {
+                    title: "Products",
+                    id:"products",
+                    items: [
+                        {
+                            title: "Cloud Server", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "Hourly payment, superior speed, safety and stability"
+                        },
+                        {
+                            title: "Cloud Server", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "Hourly payment, superior speed, safety and stability"
+                        },
+                    ]
+                },
+                {
+                    title: "Customer",
+                    href: "#",
+                    id: "customer"
+                },
+                {
+                    title: "Help",
+                    id: "help",
+                    items: [
+                        {
+                            title: "Document", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        },
+                        {
+                            title: "TechBlog", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content...."
+                        },
+                        {
+                            title: "Blog", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        }
+                    ]
+                },
+                {
+                    title: "Other Services",
+                    id: "otherServices",
+                    items: [
+                        {
+                            title: "Domain", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        },
+                        {
+                            title: "SSL", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        },
+                        {
+                            title: "Software", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        }
+                    ]
+                },
+                {
+                    title: "About Us",
+                    href: "#"
+                },
+            ],
+            button: [
+                {id: "signIn", title: "Sign In"},
+                {id: "signUp", title: "Sign Up"}
+            ]
+        },
         carouselIntroduce: {
             items: [
                 {
@@ -48,7 +133,7 @@ const content = {
             ]
         },
         testimonials: {
-            title: "Khách hàng nói gì về chúng tôi",
+            title: "What customer talk about us",
             items: [
                 {
                     active: true,
@@ -80,37 +165,39 @@ const content = {
             ]
         },
         partner: {
-            title: "Đối tác cùng phát triển của ClounFly",
+            title: "CloudFly's partners",
             content: `While we are at the forefront of and specialize
                 in design-build, we are very familiar with a number of
                 delivery methods and are confident we can find the 
                 process that will best help you meet your goals.`,
-            img: [partner1, partner2, partner3, partner4, partner1, partner2, partner3, partner4, partner1, partner2, partner3, partner4]
+            img: [partner1, partner2, partner3, partner4, partner1,
+                partner2, partner3, partner4, partner1, partner2, partner3, partner4]
         },
         trial: {
-            title: "Trải nghiệm dịch vụ ngay hôm nay",
-            content: `Dùng thử dịch vụ miễn phí trong 3 ngày để thử nghiệm nền tảng cho
-            sản phẩm, ứng dụng của bạn`,
-            img: network
+            title: "Trial now for free",
+            content: `Try the service for free for 3 days to test the platform
+                product, your application`,
+            img: network,
+            button: "Try now"
         },
         support: {
-            title: "Bạn cần hỗ trợ thêm",
-            content: "Liên hệ với đội ngũ hỗ trợ 24/7 của chúng tôi",
+            title: "Need help?",
+            content: "Contact our 24/7 support team",
             items: [
                 {
-                    title: "Gửi mail",
-                    content: `Bạn cần thêm thông tin?
-                        Gửi ngay email, chúng tôi sẽ có câu trả lời.`,
+                    title: "Send mail",
+                    content: `You need more information?
+                        Send email us and we will answer it.`,
                     img: sendMail
                 },
                 {
-                    title: "Gửi Ticket",
-                    content: `Kênh tiếp nhận yêu cầu hỗ trợ dịch vụ dành cho khách hàng của CloundFly.`,
+                    title: "Send Ticket",
+                    content: `The channel to receive support services for CloudFly's customers.`,
                     img: message
                 },
                 {
                     title: "Live Chat",
-                    content: "Bạn có câu hỏi? Hãy chat ngay với nhân viên tư vấn để được giải đáp.",
+                    content: "You have questions? Chat immediately with our consultant for answers.",
                     img: message3
                 }
             ]
@@ -119,82 +206,83 @@ const content = {
             via: "Power by iNET",
             options: [
                 {
-                    title: "Sản phẩm",
+                    title: "Products",
                     items: [
                         {title: "Cloud Server", href: "/cloud-server"},
                         {title: "Virtual Private Cloud", href: "/virtual-private-cloud"},
                         {title: "Private Cloud", href: "/private-cloud"},
                         {title: "Colocation", href: "/cho-thue-cho-dat-may-chu"},
                         {title: "Dedicated Server", href: "/cho-thue-may-chu"},
-                        {title: "Giải pháp", href: "/giai-phap"},
+                        {title: "Solution", href: "/giai-phap"},
                         {title: "Cloud Storage", href: "/cloud-storage"},
                         {title: "Container", href: "/container"},
-                        {title: "Tích hợp hệ thống", href: "/tich-hop-he-thong"},
+                        {title: "System integration", href: "/tich-hop-he-thong"},
                         {title: "cPanel", href: "/cpanel"},
                         {title: "DirectAdmin", href: "/directadmin"}
                     ]
                 },
                 {
-                    title: "Công ty",
+                    title: "Company",
                     items: [
-                        {title: "Giới thiệu", href: "/gioi-thieu"},
-                        {title: "Tuyển dụng", href: "/tuyen-dung"},
-                        {title: "Khách hàng", href: "/khach-hang"},
-                        {title: "Chính sách bảo mật", href: "/chinh-sach-bao-mat"},
-                        {title: "Quy định sử dụng", href: "/quy-dinh-su-dung"},
-                        {title: "Cam kết dịch vụ", href: "/cam-ket-dich-vu"},
-                        {title: "Khuyến mãi", href: "/khuyen-mai"}
+                        {title: "Introduce", href: "/gioi-thieu"},
+                        {title: "Recruitment", href: "/tuyen-dung"},
+                        {title: "Customer", href: "/khach-hang"},
+                        {title: "Security", href: "/chinh-sach-bao-mat"},
+                        {title: "Using regulation", href: "/quy-dinh-su-dung"},
+                        {title: "Services pledge", href: "/cam-ket-dich-vu"},
+                        {title: "Promotional", href: "/khuyen-mai"}
                     ]
                 },
                 {
-                    title: "Hỗ trợ",
+                    title: "Help",
                     items: [
-                        {title: "Hướng dẫn thanh toán", href: "#"},
-                        {title: "Hướng dẫn sử dụng", href: "/docs"},
-                        {title: "Tài liệu kỹ thuật", href: "/techblog"},
-                        {title: "Liên hệ", href: "/lien-he"}
-                    ]
-                },
-                {
-                    title: "Theo dõi chúng tôi",
-                    items: [
-                        {title: "Facebook", href: "https://www.facebook.com/cloudfly.vn", icon: "fab fa-facebook-f"},
-                        {title: "LinkedIn", href: "#", icon: "fab fa-linkedin-in"},
-                        {title: "Youtube", href: "#" ,icon: "fab fa-youtube"},
-                        {title: "Twitter", href: "#", icon: "fab fa-twitter"}
+                        {title: "Payment", href: "#"},
+                        {title: "Instructions for use", href: "/docs"},
+                        {title: "Technologies doc", href: "/techblog"},
+                        {title: "Contact", href: "/lien-he"}
                     ]
                 },
             ],
+            follow: {
+                title: "Follow us",
+                items: [
+                    {title: "Facebook", href: "https://www.facebook.com/cloudfly.vn", icon: "fab fa-facebook-f"},
+                    {title: "LinkedIn", href: "#", icon: "fab fa-linkedin-in"},
+                    {title: "Youtube", href: "#" ,icon: "fab fa-youtube"},
+                    {title: "Twitter", href: "#", icon: "fab fa-twitter"}
+                ]
+            },
             address: [
                 {
-                    title: "Hà Nội",
+                    title: "Ha Noi",
                     items: [ 
-                        {title: "Toà nhà iNET, 247 Cầu Giấy, phường Dịch Vọng, Quận Cầu Giấy", icon: "fa fa-map-marker"},
+                        {title: "INET building, 247 Cau Giay, Dich Vong ward, Cau Giay district", icon: "fa fa-map-marker"},
                         {title: "Email: contact@CloudFly.vn", icon: "fa fa-envelope"},
                         {title: "Hotline: 0904 558 448", icon: "fa fa-phone-square"}
                     ]
                 },
                 {
-                    title: "Thành Phố Hồ Chí Minh",
+                    title: "Ho Chi Minh city",
                     items: [
-                        {title: "Tòa nhà Arrow, 40 Hoàng Việt, Phường 4, Quận Tân Bình", icon: "fa fa-map-marker"},
+                        {title: "Arrow building, 40 Hoang Viet, 4 ward, Tan Binh district", icon: "fa fa-map-marker"},
                         {title: "Email: contact@CloudFly.vn", icon: "fa fa-envelope"},
                         {title: "Hotline: 0904 558 448", icon: "fa fa-phone-square"}
                     ]
                 },
                 {
-                    title: "Đà Nẵng",
+                    title: "Da Nang city",
                     items: [
-                        {title: "Tòa nhà S-HOME, 56 Nguyễn Tri Phương, Phường Chính Gián, Quận Thanh Khê", icon: "fa fa-map-marker"},
+                        {title: "S-HOME building, 56 Nguyen Tri Phuong, Chinh Giang ward, Thanh Khe district", icon: "fa fa-map-marker"},
                         {title: "Email: contact@CloudFly.vn", icon: "fa fa-envelope"},
                         {title: "Hotline: 0904 558 448", icon: "fa fa-phone-square"}
                     ]
                 }
             ],
             copyright: [
-                "© Copyright 2021 CloudFly. Công Ty Cổ Phần CloudFly",
-                "Số 56 Nguyễn Tri Phương, P. Chính Gián, Q. Thanh Khê, TP. Đà Nẵng. Đại Diện: Ông Lưu Văn Vương",
-                "Mã số thuế 0402035884 cấp tại Phòng đăng ký kinh doanh Sở Kế hoạch và Đầu tư Thành phố Đà Nẵng"
+                "© Copyright 2021 CloudFly. CloudFly company",
+                "56 Nguyen Tri Phuong, Chinh Giang ward, Thanh Khe district, Danang city",
+                "Representative : Mr. Luu Van Vuong",
+                "Tax code 0402035884 issued at the department of planning and investment of Danang City"
             ]
 
         },
@@ -204,11 +292,12 @@ const content = {
     
     homePage: {
         products: {
-            title: "Dịch vụ của chúng tôi",
-            description: `Lựa chọn hàng đầu cho kỷ nguyên chuyển 
-                đổi số với hạ tầng điện toán đám mây hiệu năng cao. 
-                Bạn chỉ việc chuyên tâm vào phát triển ứng dụng và sản
-                phẩm tuyệt vời của mình, mọi thứ còn lại hãy để chúng tôi giúp bạn.`,
+            title: "Our services",
+            description: `The best choice for the digital
+                transformation era with high-performance cloud 
+                infrastructure. You just need to focus on developing 
+                your amazing apps and products, let us help you with 
+                the rest.`,
             items: [
                 {
                     img: publicCloud,

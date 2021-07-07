@@ -24,6 +24,91 @@ const content = {
     internal: {
         ads: `This line is for the event that you want to add to the web side`,
         logo: logo,
+        email: "contact@cloudfly.vn",
+        phoneNumber: "0904 558 448",
+        header: {
+            menu: [
+                {
+                    title: "Sản Phẩm",
+                    id:"products",
+                    items: [
+                        {
+                            title: "Cloud Server", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "Thanh toán theo giờ, tốc độ cao, an toàn và ổn định"
+                        },
+                        {
+                            title: "Cloud Server", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "Thanh toán theo giờ, tốc độ cao, an toàn và ổn định"
+                        },
+                    ]
+                },
+                {
+                    title: "Khách Hàng",
+                    href: "#",
+                    id: "customer"
+                },
+                {
+                    title: "Hỗ trợ",
+                    id: "help",
+                    items: [
+                        {
+                            title: "Document", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        },
+                        {
+                            title: "TechBlog", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content...."
+                        },
+                        {
+                            title: "Blog", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        }
+                    ]
+                },
+                {
+                    title: "Dịch Vụ Khác",
+                    id: "otherServices",
+                    items: [
+                        {
+                            title: "Tên Miền", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        },
+                        {
+                            title: "SSL", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        },
+                        {
+                            title: "Phần Mềm", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "content..."
+                        }
+                    ]
+                },
+                {
+                    title: "Giới Thiệu",
+                    href: "#"
+                },
+            ],
+            button: [
+                {id: "signIn", title: "Đăng Nhập"},
+                {id: "signUp", title: "Dùng Thử"}
+            ]
+        },
         carouselIntroduce: {
             items: [
                 {
@@ -91,7 +176,9 @@ const content = {
             title: "Trải nghiệm dịch vụ ngay hôm nay",
             content: `Dùng thử dịch vụ miễn phí trong 3 ngày để thử nghiệm nền tảng cho
             sản phẩm, ứng dụng của bạn`,
-            img: network
+            img: network,
+            button: "Đăng ký ngay"
+
         },
         support: {
             title: "Bạn cần hỗ trợ thêm",
@@ -115,6 +202,7 @@ const content = {
                 }
             ]
         },
+        
         footer: {
             via: "Power by iNET",
             options: [
@@ -154,17 +242,17 @@ const content = {
                         {title: "Tài liệu kỹ thuật", href: "/techblog"},
                         {title: "Liên hệ", href: "/lien-he"}
                     ]
-                },
-                {
-                    title: "Theo dõi chúng tôi",
-                    items: [
-                        {title: "Facebook", href: "https://www.facebook.com/cloudfly.vn", icon: "fab fa-facebook-f"},
-                        {title: "LinkedIn", href: "#", icon: "fab fa-linkedin-in"},
-                        {title: "Youtube", href: "#" ,icon: "fab fa-youtube"},
-                        {title: "Twitter", href: "#", icon: "fab fa-twitter"}
-                    ]
-                },
+                }
             ],
+            follow: {
+                title: "Theo dõi chúng tôi",
+                items: [
+                    {title: "Facebook", href: "https://www.facebook.com/cloudfly.vn", icon: "fab fa-facebook-f"},
+                    {title: "LinkedIn", href: "#", icon: "fab fa-linkedin-in"},
+                    {title: "Youtube", href: "#" ,icon: "fab fa-youtube"},
+                    {title: "Twitter", href: "#", icon: "fab fa-twitter"}
+                ]
+            },
             address: [
                 {
                     title: "Hà Nội",
