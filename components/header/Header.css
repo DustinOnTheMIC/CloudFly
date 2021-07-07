@@ -108,6 +108,10 @@
     border-radius:  20px !important;
 }
 
+.nav-top a:hover {
+    color: #2E86DE;
+}
+
 @media only screen and (max-width: 991px) {
     .navbar .navbar-toggler{
         top: 15px !important;
