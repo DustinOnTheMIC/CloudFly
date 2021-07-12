@@ -1,5 +1,4 @@
 import * as React from "react";
-import content from "../../share/Content";
 import user from '../../assets/images/user.png';
 import FeedBackItem, { FeedBackItemProps } from "./FeedbackItem";
 

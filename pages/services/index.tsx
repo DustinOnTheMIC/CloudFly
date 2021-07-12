@@ -4,7 +4,6 @@ import useTranslate from "../../hooks/useTranslate";
 //component / type
 import Products, { ProductItemProps } from "../../components/products/Products";
 import CarouselAbout from "../../components/feedback/Feedback";
-import content from "../../share/Content";
 const Services: React.FC = () => {
 
     const translate: any = useTranslate();
