@@ -1,10 +1,14 @@
 import * as React from "react";
 import user from '../../assets/images/user.png';
-import FeedBackItem, { FeedBackItemProps } from "./FeedbackItem";
+import FeedBackItem, { OneFeedbackProps } from "./OneFeedback";
+import useTranslate from '../../hooks/useTranslate';
 
 const Testimonials: React.FC = () => {
 
-  const feedback: FeedBackItemProps[] = [
+  const t = useTranslate();
+  const { testimonials } = t.internal;
+
+  const feedback: OneFeedbackProps[] = [
     {
       img: user,
       user: {
@@ -34,6 +38,11 @@ const Testimonials: React.FC = () => {
 
   return (
     <section className="pb-5 mb-5">
+      <div className="justify-content-center testimonial-item pt-5" data-aos="zoom-in-up">
+        <div className="section-heading">
+          <h2 className="text-center">{testimonials.title}</h2>
+        </div>
+      </div>
       <div className="carousel slide" data-ride="carousel" id="postsCarousel">
         <div className="container pt-0 mt-2">
           <div className="carousel-inner">

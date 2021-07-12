@@ -153,6 +153,27 @@ const content = {
                 }
             ]
         },
+        customer: {
+            title: "Tin dùng bởi 10,000+ khách hàng trong và ngoài nước",
+            items: [
+                {
+                    img: publicCloud,
+                    title: "Hạ tầng mạnh mẽ"
+                },
+                {
+                    img: publicCloud,
+                    title: "Đội ngũ kỹ thuật chuyên nghiệp 24/7"
+                },
+                {
+                    img: publicCloud,
+                    title: "Cam kết chất lượng dịch vụ SLA"
+                },
+                {
+                    img: publicCloud,
+                    title: "Cam kết 100% hoàn tiền"
+                }
+            ]
+        },
         testimonials: {
             title: "Khách hàng nói gì về chúng tôi",
             items: [
@@ -318,36 +339,43 @@ const content = {
                 đổi số với hạ tầng điện toán đám mây hiệu năng cao. 
                 Bạn chỉ việc chuyên tâm vào phát triển ứng dụng và sản
                 phẩm tuyệt vời của mình, mọi thứ còn lại hãy để chúng tôi giúp bạn.`,
+            button: "Xem Thêm",
             items: [
                 {
                     img: publicCloud,
                     title: "Cloud Server",
-                    content: "Khởi tạo Cloud Server nhanh chóng trên hạ tầng điện toán đám mây sử dụng 100% SSD"
+                    content: "Khởi tạo Cloud Server nhanh chóng trên hạ tầng điện toán đám mây sử dụng 100% SSD",
+                    href: "#"
                 },
                 {
                     img: vpc,
                     title: "Virtual Private Cloud",
-                    content: "Bảo mật tài nguyên đám mây của bạn với các kết nối nội bộ trong hạ tầng Cloud Server"
+                    content: "Bảo mật tài nguyên đám mây của bạn với các kết nối nội bộ trong hạ tầng Cloud Server",
+                    href: "#"
                 },
                 {
                     img: privateCloud,
                     title: "Private Cloud",
-                    content: "Giải pháp xây dựng hạ tầng điện toán đám mây cho doanh nghiệp trên nền tảng OpenStack"
+                    content: "Giải pháp xây dựng hạ tầng điện toán đám mây cho doanh nghiệp trên nền tảng OpenStack",
+                    href: "#"
                 },
                 {
                     img: dedicatedServer,
                     title: "Dedicated Server",
-                    content: "Máy chủ vật lý chuyên dụng với cấu hình mạnh mẽ trên các trung tâm dữ liệu đạt chuẩn quốc tế"
+                    content: "Máy chủ vật lý chuyên dụng với cấu hình mạnh mẽ trên các trung tâm dữ liệu đạt chuẩn quốc tế",
+                    href: "#"
                 },
                 {
                     img: colocation,
                     title: "Colocation",
-                    content: " Cho thuê chỗ đặt máy chủ tại các trung tâm dữ liệu đạt chuẩn quốc tế Tier 3"
+                    content: " Cho thuê chỗ đặt máy chủ tại các trung tâm dữ liệu đạt chuẩn quốc tế Tier 3",
+                    href: "#"
                 },
                 {
                     img: solutions,
                     title: "Solutions",
-                    content: "Tư vấn và triển khai các giải pháp tích hợp hệ thống, điện toán đám mây cho doanh nghiệp"
+                    content: "Tư vấn và triển khai các giải pháp tích hợp hệ thống, điện toán đám mây cho doanh nghiệp",
+                    href: "#"
                 }
             ],
         },

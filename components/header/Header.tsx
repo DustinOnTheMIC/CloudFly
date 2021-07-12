@@ -164,7 +164,7 @@ export default function Header() {
                     id={item.id + "Child"}
                     className="dropdown-menu mt-0 wrap-items"
                   >
-                    <div className="wr">
+                    <div className="wr shadow-lg">
 
                       {item.items.map((item, index) =>
 
@@ -172,12 +172,17 @@ export default function Header() {
                           <Link href={item.href} passHref={true}>
                             <div className="one-item pointer p-3">
                               <a className="d-flex col-12 align-items-center mb-3 p-0">
-                                <Image src={item.img} width={50} height={40} alt="" className=""/>
-                                <p className="mb-0 ml-2 mt-2">{item.title}</p>
+                                <div className="img">
+                                  <Image src={item.img} width={50} height={40} alt=""/>
+                                </div>
+                                <div className="ml-2">
+                                  <p className="mb-0"><strong>{item.title}</strong></p>
+                                  <p >
+                                    {item.content}
+                                  </p>
+                                </div>
                               </a>
-                              <a >
-                                {item.content}
-                              </a>
+                              
                             </div>
                           </Link>
                         </div>

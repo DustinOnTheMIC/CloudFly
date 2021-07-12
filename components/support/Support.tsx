@@ -11,7 +11,7 @@ const Support = (props: SupportProps) => {
     const { support } = translate.internal;
 
     return (
-        <div className="bg-dark py-5">
+        <div className="py-5">
             <div className="col-12 block-centered text-align-center container pt-5">
                 <h2 className="col-12" data-aos="fade-down">
                     <strong>{support.title}</strong>

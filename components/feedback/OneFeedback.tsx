@@ -2,7 +2,7 @@ import * as React from 'react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-export type FeedBackItemProps = {
+export type OneFeedbackProps = {
     img: any,
     user: {
         gender: boolean,
@@ -12,7 +12,7 @@ export type FeedBackItemProps = {
     comment: string,
 }
 
-const FeedBackItem: React.FC<FeedBackItemProps> = ({img, user, comment}) => {
+const OneFeedback: React.FC<OneFeedbackProps> = ({img, user, comment}) => {
 
   return (
     <div className="col-12 col-lg-5 mx-auto d-flex rounded border mt-5 py-3">
@@ -40,4 +40,4 @@ const FeedBackItem: React.FC<FeedBackItemProps> = ({img, user, comment}) => {
   );
 };
 
-export default FeedBackItem;
+export default OneFeedback;

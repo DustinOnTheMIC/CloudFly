@@ -2400,6 +2400,10 @@ ul.grid-2 > li {
   animation: spin 50s linear infinite;
 }
 
+.blue {
+  color: #0082f3 !important;
+}
+
 @keyframes animate {
   from {
       transform: scale(1);

@@ -11,6 +11,8 @@ import '../components/carouselDefault/CarouselDefault.css';
 import '../components/benefit/Benefit.css';
 import '../components/feedback/Feedback.css';
 import '../components/partner/Partner.css';
+import '../components/products/Products.css';
+
 import { createStore } from 'redux';
 import {Provider} from 'react-redux';
 import allReducer from '../redux/reducers';

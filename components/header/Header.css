@@ -87,13 +87,16 @@
 
 .wrap-items {
     border: none !important;
-    min-width: 700px;
+    min-width: 800px;
     padding: 0;
 }
 
 .wr {
     display: flex;
     flex-wrap: wrap;
+}
+
+.img {
 }
 
 .bg-none {
