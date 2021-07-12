@@ -44,6 +44,18 @@ const content = {
                             href: "#", 
                             content: "Hourly payment, superior speed, safety and stability"
                         },
+                        {
+                            title: "Cloud Server", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "Hourly payment, superior speed, safety and stability"
+                        },
+                        {
+                            title: "Cloud Server", 
+                            img: publicCloud, 
+                            href: "#", 
+                            content: "Hourly payment, superior speed, safety and stability"
+                        },
                     ]
                 },
                 {

@@ -59,23 +59,22 @@ export default function Footer(props: FooterProps) {
                   {option.title}
                 </div>
                 {option.items.map((item: itemOptions, index) =>
-                  item.icon ? (
+                  item.icon ?
                     <Link
                       key={index} 
                       href={item.href}>
-                      <a className="footer-nav-link on-dark w-inline-block ">
+                      <a className="footer-nav-link w-inline-block ">
                         <div className="col-12 wrap-icon wrap-icon">
                           <i className={item.icon + " mr-3"}></i> {item.title}
                         </div>
                       </a>
                     </Link>
-                  ) : (
+                  :
                     <Link 
                       key={index}
                       href={item.href}>
                       <a className="footer-nav-link on-dark">{item.title}</a>
                     </Link>
-                  )
                 )}
               </div>
             ))}

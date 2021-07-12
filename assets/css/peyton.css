@@ -1006,12 +1006,12 @@ figcaption {
 }
 
 .button-primary.is-small.order-last.is-dark {
-  background-color: #556575;
+  background-color: #5b6886;
 }
 
 .button-primary.is-small.order-last.is-white {
   background-color: #fff;
-  color: #556575;
+  color: #5b6886;
 }
 
 .button-primary.is-dark {
@@ -1040,7 +1040,7 @@ figcaption {
 
 .button-primary.margin-right.is-white {
   background-color: #fff;
-  color: #556575;
+  color: #5b6886;
 }
 
 .button-primary.animated {
@@ -1093,7 +1093,7 @@ figcaption {
 
 .button-primary.is-white {
   background-color: #fff;
-  color: #556575;
+  color: rgb(3, 27, 79) !important;
 }
 
 .button-primary.basis-100px {
@@ -1678,7 +1678,7 @@ figcaption {
 }
 
 .on-dark {
-  color: #fff;
+  color: #fff !important;
 }
 
 .float-right {
@@ -1774,7 +1774,7 @@ figcaption {
 }
 
 .nav-link.on-dark:hover {
-  color: hsla(0, 0%, 100%, 0.82);
+  color: black !important;
 }
 
 .nav-link.on-dark.w--current {
@@ -1812,7 +1812,7 @@ figcaption {
 }
 
 .footer-nav-link.on-dark:hover {
-  color: #005dff;
+  color: #005dff !important;
 }
 
 .footer-nav-link.is-bold {

@@ -80,10 +80,20 @@
     margin-left: 20px;
 }
 
+.contact-info:hover i, 
+.contact-info:hover span {
+ color: #ffffff !important;
+}
+
 .wrap-items {
     border: none !important;
-    min-width: 300px;
+    min-width: 700px;
     padding: 0;
+}
+
+.wr {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .bg-none {
@@ -97,7 +107,6 @@
 
 .one-item {
     background-color: #f5f6fa;
-    border-radius: 20px;
 }
 
 .one-item:hover {
@@ -106,6 +115,10 @@
 
 .btn-rounded {
     border-radius:  20px !important;
+}
+
+.nav-top a:hover {
+    color: #2E86DE;
 }
 
 @media only screen and (max-width: 991px) {
@@ -117,7 +130,7 @@
         width: 25%;
     }
 
-    #info {
+    #info ul {
         display: none;
     }
 
@@ -132,13 +145,20 @@
 
 }
 
+.col-logo {
+    width: 12%;
+}
+
 @media screen and (max-width: 786px) {
-    #info {
+    #info ul {
         display: none;
     }
 
     .wrap-logo {
         width: 30%;
+    }
+    .wrap-items {
+        min-width: 300px;
     }
 }
 

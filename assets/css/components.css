@@ -64,6 +64,14 @@ body {
   color: #333;
 }
 
+p, a, strong {
+  color: rgb(3, 27, 79) !important;
+}
+
+footer{
+  color: #5d6c7b !important; 
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -2346,6 +2354,14 @@ ul.grid-2 > li {
 
 .z-index-10 {
   z-index: 10 !important;
+}
+
+.b-none {
+  border: none;
+}
+
+.z-index {
+  z-index: 1000;
 }
 
 .bg-white {

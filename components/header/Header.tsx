@@ -3,8 +3,9 @@ import Link from "next/link";
 import { useEffect } from "react";
 import Image from "next/image";
 import useTranslate from "../../hooks/useTranslate";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { changeLanguage } from "../../redux/actions/lang.actions";
+import vietNam from '../../assets/images/vietnam.svg';
 
 export default function Header() {
   const translate = useTranslate();
@@ -68,11 +69,11 @@ export default function Header() {
           </p>
         </div>
         {/* event */}
-
+        
         {/* info */}
-        <div id="info" className="no-margin-bottom flexh-justify-end no-padding-right hidden-xs col-5">
-          <ul className="nav-top bg-white">
-
+        <div id="info" className="no-margin-bottom flexh-justify-end no-padding-right hidden-xs col-5 d-flex">
+          
+          <ul className="nav-top bg-white z-index h-100">
             <li className="">
               <Link href="https://www.facebook.com/cloudfly.vn">
                 <a className=" mx-1">
@@ -80,7 +81,7 @@ export default function Header() {
                 </a>
               </Link>
             </li>
-
+            
             <li className="">
               <Link href="https://www.facebook.com/cloudfly.vn">
                   <a className=" mx-1">
@@ -97,6 +98,20 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+
+          {/* Language */}
+          <select 
+            className="b-none border-left bg-white d-block z-index"
+            onChange={handleChangeLanguage}>
+            <option >
+              VN
+            </option>
+            <option >
+              EN
+            </option>
+          </select>
+          {/* Language */}
+
         </div>
         {/* info */}
       </div>
@@ -144,30 +159,30 @@ export default function Header() {
                   >
                     {item.title}
                   </a>
-                  
+
                   <div
                     id={item.id + "Child"}
                     className="dropdown-menu mt-0 wrap-items"
                   >
-                    <div id="split" className="bg-none p-xl-3 p-2 split"></div>
+                    <div className="wr">
 
-                    {item.items.map((item, index) => 
-                    
-                      <div key={index}>
-                        <Link href={item.href} passHref={true}>
-                          <div className="one-item pointer p-3">
-                            <a className="d-flex col-12 align-items-center mb-3 p-0">
-                              <Image src={item.img} width={50} height={40} alt="" className=""/>
-                              <p className="mb-0 ml-2 mt-2">{item.title}</p>
-                            </a>
-                            <a >
-                              {item.content}
-                            </a>
-                          </div>
-                        </Link>
-                        <div className="bg-none p-2 split"></div>
-                      </div>
-                    )}
+                      {item.items.map((item, index) =>
+
+                        <div key={index} className="col-12 col-lg-6 px-0">
+                          <Link href={item.href} passHref={true}>
+                            <div className="one-item pointer p-3">
+                              <a className="d-flex col-12 align-items-center mb-3 p-0">
+                                <Image src={item.img} width={50} height={40} alt="" className=""/>
+                                <p className="mb-0 ml-2 mt-2">{item.title}</p>
+                              </a>
+                              <a >
+                                {item.content}
+                              </a>
+                            </div>
+                          </Link>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </li>
 
@@ -183,7 +198,7 @@ export default function Header() {
 
           
 
-            <div className="wrap-icon contact-info text-right">
+            <div className="wrap-icon contact-info text-right btn btn-outline-primary btn-rounded">
               <Link href={`tel:${phoneNumber}`}>
                 <a className="wrap-icon">
                   <i className="fas fa-phone-alt mr-2"></i>
@@ -200,12 +215,7 @@ export default function Header() {
               </button>
             )}
             
-            <div className="form-group mb-0">
-              <select className="form-control btn-rounded" id="language" onChange={handleChangeLanguage}>
-                <option value="vn">VN</option>
-                <option value="en">EN</option>
-              </select>
-            </div>
+            
           </form>
         </div>
 

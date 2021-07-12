@@ -1,8 +1,17 @@
 import publicCloud from "../../../assets/images/public-cloud.png";
 import vpc from "../../../assets/images/vpc.png";
-import privateCloud from '../../../assets/images/private-cloud.png';
-import dedicatedServer from '../../../assets/images/dedicated-server.png';
 import colocation from '../../../assets/images/colocation.png';
+import dedicatedServer from '../../../assets/images/dedicated-server.png';
+
+import dataCenter from '../../../assets/images/data-center.png';
+import serverStorage from '../../../assets/images/server-storage.png';
+import container from '../../../assets/images/container.png';
+import system from '../../../assets/images/system.png';
+
+import cPanel from '../../../assets/images/cPanel_orange_RGB.png';
+import directAdmin from '../../../assets/images/symbol_directadmin.svg';
+
+import privateCloud from '../../../assets/images/private-cloud.png';
 import solutions from '../../../assets/images/solitions-server.png';
 import logo from '../../../assets/images/logo.png';
 import solution from '../../../assets/images/solution-business.svg';
@@ -36,13 +45,25 @@ const content = {
                             title: "Cloud Server", 
                             img: publicCloud, 
                             href: "#", 
-                            content: "Thanh toán theo giờ, tốc độ cao, an toàn và ổn định"
+                            content: "Thanh toán theo giờ, tốc độ vượt trội, an toàn và ổn định"
+                        },
+                        {
+                            title: "Virtual Private Cloud", 
+                            img: vpc, 
+                            href: "#", 
+                            content: "Sử dụng đám mây dùng riêng độc lập trên hạ tầng của CloudFly"
                         },
                         {
                             title: "Cloud Server", 
                             img: publicCloud, 
                             href: "#", 
-                            content: "Thanh toán theo giờ, tốc độ cao, an toàn và ổn định"
+                            content: "Thanh toán theo giờ, tốc độ vượt trội, an toàn và ổn định"
+                        },
+                        {
+                            title: "Virtual Private Cloud", 
+                            img: vpc, 
+                            href: "#", 
+                            content: "Sử dụng đám mây dùng riêng độc lập trên hạ tầng của CloudFly"
                         },
                     ]
                 },

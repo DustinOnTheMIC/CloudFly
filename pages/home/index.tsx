@@ -11,7 +11,6 @@ import CarouselDefault from "../../components/carouselDefault/CarouselDefault";
 import Benefit from "../../components/benefit/Benefit";
 import Trial from "../../components/trial/Trial";
 
-import content from '../../share/Content';
 import Partner from "../../components/partner/Partner";
 import Support from "../../components/support/Support";
 import Feedback from "../../components/feedback/Feedback";
@@ -60,7 +59,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-heading"  data-aos="fade-up">
+              <div className="section-heading" data-aos="fade-up">
 
                 <span>_____________</span>
                 <h2>{products.title}</h2>
